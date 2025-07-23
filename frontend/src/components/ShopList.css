@@ -1,0 +1,225 @@
+.shop-list-container {
+  padding: 20px;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.shop-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shop-list-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.add-shop-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-shop-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.shop-table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.shop-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.shop-table th {
+  background: #f8f9fa;
+  padding: 16px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e1e5e9;
+}
+
+.shop-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #e1e5e9;
+  vertical-align: top;
+}
+
+.shop-table tr:hover {
+  background: #f8f9fa;
+}
+
+.shop-name-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.shop-name-cell strong {
+  color: #333;
+  font-size: 16px;
+}
+
+.shop-description {
+  color: #666;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: #e9ecef;
+  color: #495057;
+}
+
+.category-badge.electronics {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.category-badge.clothing {
+  background: #d4edda;
+  color: #155724;
+}
+
+.category-badge.food {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.category-badge.home-garden {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.category-badge.sports {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+.category-badge.books {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.category-badge.beauty {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-info .phone {
+  color: #666;
+  font-size: 12px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-button,
+.delete-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.edit-button:hover {
+  background: #e3f2fd;
+}
+
+.delete-button:hover {
+  background: #ffebee;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 40px;
+  color: #667eea;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.error-message {
+  background: #fee;
+  color: #c33;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #fcc;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .shop-list-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .shop-table-container {
+    overflow-x: auto;
+  }
+  
+  .shop-table {
+    min-width: 600px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    gap: 4px;
+  }
+} 

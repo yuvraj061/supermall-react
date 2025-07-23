@@ -1,0 +1,284 @@
+.offer-list-container {
+  padding: 20px;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.offer-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.offer-list-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.add-offer-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-offer-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.offer-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #e1e5e9;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.offer-card.active {
+  border-left-color: #28a745;
+}
+
+.offer-card.upcoming {
+  border-left-color: #ffc107;
+}
+
+.offer-card.expired {
+  border-left-color: #dc3545;
+}
+
+.offer-card.inactive {
+  border-left-color: #6c757d;
+  opacity: 0.7;
+}
+
+.offer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.offer-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.status-badge.active {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.upcoming {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.expired {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.status-badge.inactive {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+.offer-shop {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.shop-category {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  margin-top: 2px;
+}
+
+.offer-description {
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.offer-pricing {
+  margin-bottom: 15px;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.original-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 16px;
+}
+
+.discounted-price {
+  color: #28a745;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.discount-badge {
+  background: #dc3545;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.offer-dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.date-item {
+  color: #666;
+}
+
+.offer-terms {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.offer-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.edit-button,
+.delete-button {
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.edit-button {
+  color: #667eea;
+}
+
+.edit-button:hover {
+  background: #e3f2fd;
+}
+
+.delete-button {
+  color: #dc3545;
+}
+
+.delete-button:hover {
+  background: #ffebee;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 40px;
+  color: #667eea;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.error-message {
+  background: #fee;
+  color: #c33;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #fcc;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .offer-list-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .offer-dates {
+    grid-template-columns: 1fr;
+  }
+  
+  .offer-actions {
+    flex-direction: column;
+  }
+  
+  .price-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+} 
