@@ -1,6 +1,6 @@
 # SuperMall
 
-![SuperMall Logo](./frontend/public/logo192.png)
+![SuperMall Logo](logo192.png)
 
 **India’s Digital Marketplace**
 
